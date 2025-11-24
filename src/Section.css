@@ -1,0 +1,4 @@
+section {
+  height: 100vh;
+  box-sizing: border-box; /* pour que le padding n’augmente pas la hauteur */
+}
