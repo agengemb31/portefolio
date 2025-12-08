@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Header from './Header.js';
+import Footer from './Footer.js';
 import HomeSection from './HomeSection.js';
 import AboutSection from './AboutSection.js';
 import SkillsSection from './SkillsSection.js';
@@ -32,10 +33,9 @@ function App() {
     
     <HomeSection bg="bg-light" textColor="text-white" height={headerHeight} />
     <AboutSection bg="bg-light" textColor="text-black" height={headerHeight} />
-    <ProjectsSection bg="bg-dark" textColor="text-white" height={headerHeight} />
-
     <ContactSection bg="bg-dark" textColor="text-white" height={headerHeight} />
-    </div>
+    <Footer/>
+	  </div>
   );
 }
 
