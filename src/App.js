@@ -33,7 +33,8 @@ function App() {
     
     <HomeSection bg="bg-light" textColor="text-white" height={headerHeight} />
     <AboutSection bg="bg-light" textColor="text-black" height={headerHeight} />
-    <ContactSection bg="bg-dark" textColor="text-white" height={headerHeight} />
+    <ProjectsSection bg="bg-light" textColor="text-black" height={headerHeight} />
+	 <ContactSection bg="bg-light" textColor="text-black" height={headerHeight} />
     <Footer/>
 	  </div>
   );

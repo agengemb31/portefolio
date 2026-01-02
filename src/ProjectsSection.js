@@ -7,10 +7,10 @@ export default function ProjectsSection({bg, textColor, height}) {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
-    { id: 1, title: "Projet 1", image: "/project.jpg", description: "Description du projet 1." },
-    { id: 2, title: "Projet 2", image: "/project.jpg", description: "Description du projet 2." },
-    { id: 3, title: "Projet 3", image: "/project.jpg", description: "Description du projet 3." },
-    { id: 4, title: "Projet 4", image: "/project.jpg", description: "Description du projet 4." },
+    { id: 1, title: "Transcendence", image: "/transcendence-screen1.png", description: "Application Web d'un jeu pong en réseau via la framework Django avec création et gestion de compte, tchat et plusieurs modes de jeu" },
+    { id: 2, title: "Minishell", image: "/minishell-screen1.png", description: "Implementation d'un invité de commande simplifé avec variables d'environement, builtins, redirections et heredoc" },
+    { id: 3, title: "Cube3D", image: "/cube3D-screen1.png", description: "Implementation de l'algorithme de raycasting e langage C avec prise en charge des textures et parsing selon certaines règles des maps." },
+    { id: 4, title: "Portfolio", image: "/portfolio-screen1.png", description: "Site Web présentant mes principaux projets étudiants et personnels via la bibliothéque React et la framework bootstrap." },
     { id: 5, title: "Projet 5", image: "/project.jpg", description: "Description du projet 5." },
     { id: 6, title: "Projet 6", image: "/project.jpg", description: "Description du projet 6." },
   ];
@@ -18,7 +18,7 @@ export default function ProjectsSection({bg, textColor, height}) {
   return (
     <section
       id="projets"
-      className={`vh-100 ${bg} ${textColor} d-flex flex-column align-items-center justify-content-center`} style={{ scrollMarginTop: `${height}px`, backgroundImage: "url('/bg-projects.jpg')",  // chemin vers ton image
+      className={`container-fluid vh-100 ${bg} ${textColor} d-flex flex-column align-items-center justify-content-center`} style={{ scrollMarginTop: `${height}px`, backgroundImage: "url('/bg-projects.jpg')",  // chemin vers ton image
     backgroundSize: "cover",                  // couvre toute la section
     backgroundPosition: "center",             // centrée
     backgroundRepeat: "no-repeat",            // pas de répétition

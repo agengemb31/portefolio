@@ -13,12 +13,8 @@ export default function AboutSection({bg, textColor, height})
 
 		<div className="container-md bg-body border-6 border-primary-subtle rounded d-flex flex-column align-items-center justify-content-center py-5">
 		<p className="text-justify my-5"> 
-		Passioné par l'informatique, je m'intéresse au développement sous toutes ses formes, de la conception d'application à la résolution de problèmes techniques.
-		</p> 
-		<p>
-		J'aime comprendre comment les systèmes fonctionnent, optimiser les performances et transformer des idées en solutions concrètes. Je développe des projets pour apprendre, progresser et mettre mes compétences en pratique.
-		</p>
-		<p>
+		Passioné par l'informatique, je m'intéresse au développement sous toutes ses formes, de la conception d'application à la résolution de problèmes techniques.<br/> 
+		J'aime comprendre comment les systèmes fonctionnent, optimiser les performances et transformer des idées en solutions concrètes. Je développe des projets pour apprendre, progresser et mettre mes compétences en pratique.<br/>
 		Ce portfolio regroupe mes réalisations, mes compétences et mon parcours.
 		</p>
 

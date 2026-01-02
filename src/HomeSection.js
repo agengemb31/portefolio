@@ -21,7 +21,7 @@ export default function HomeSection({title, bg, textColor, height})
       				left: 0,
       				zIndex: -1,
     			}}>
-  				<source src="/Background.mp4" type="video/mp4" />
+  				<source src="/background.mp4" type="video/mp4" />
 	    		</video>
 
   		{/* Contenu au-dessus de la vidéo */}
