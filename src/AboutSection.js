@@ -4,7 +4,7 @@ export default function AboutSection({bg, textColor, height})
 		<section id="apropos" className={`${bg} ${textColor} container-fluid d-flex flex-column align-items-center justify-content-center`} style={{ scrollMarginTop: `${height}px`
 
 		}}>
-		<h1>A propos</h1>
+		<h1>À Propos</h1>
 		<div className="d-flex align-items-center justify-content-center w-100" style={{ gap: "1rem" }}>
 		<hr className="border-primary border-3 w-25" />
 		<div className="rounded-circle bg-primary" style={{ width: "10px", height: "10px", margin: "0 0.5rem" }}></div>

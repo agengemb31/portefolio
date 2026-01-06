@@ -9,9 +9,7 @@ export default function HomeSection({title, bg, textColor, height})
 	    	style={{
     			position: "relative", // <-- important
     			height: "100vh",               // hauteur pleine de la fenêtre
-    			overflow: "hidden",
-    			scrollMarginTop: `${height}px`,
-    			marginTop: `${height}px`,
+    			overflow: "hidden"
   		}}>
   			<video autoPlay loop muted playsInline className="w-100 h-100" 
 			style={{
@@ -33,7 +31,7 @@ export default function HomeSection({title, bg, textColor, height})
     					<div className="rounded-circle bg-primary" style={{ width: "10px", height: "10px", margin: "0 0.5rem" }}></div>
     					<hr className="border-primary border-3 w-25" />
 	    			</div>
-    				<h3>Software Developper - Web Developper - DevOps</h3>
+    				<h3>Développeur Logiciel - Développeur Web - DevOps</h3>
   			</div>
 	    	</section>
 	

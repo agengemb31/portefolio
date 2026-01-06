@@ -24,6 +24,11 @@
   color: white;
 }
 
+.page-spacer {
+	height:250px;
+	background-color: #f8f9fa;
+}
+
 .App-link {
   color: #61dafb;
 }

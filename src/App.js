@@ -29,12 +29,14 @@ function App() {
   }, []);
 
   return (
-  	<div><Header ref={headerRef}/>
-    
+  	<div className="d-flex flex-column min-vh-100"><Header ref={headerRef} height={headerHeight}/>
+    <main className="flex-grow-1 ">
     <HomeSection bg="bg-light" textColor="text-white" height={headerHeight} />
     <AboutSection bg="bg-light" textColor="text-black" height={headerHeight} />
     <ProjectsSection bg="bg-light" textColor="text-black" height={headerHeight} />
-	 <ContactSection bg="bg-light" textColor="text-black" height={headerHeight} />
+    <ContactSection bg="bg-light" textColor="text-black" height={headerHeight} />
+	 <div className="d-block d-lg-none" style={{ height: 250, backgroundColor: "#f8f9fa" }} /> 
+	  </main>
     <Footer/>
 	  </div>
   );

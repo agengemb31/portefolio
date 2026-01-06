@@ -1,3 +1,9 @@
 .btn-link {
   text-decoration: none;
 }
+
+.bg-dark-transparent {
+  background-color: rgba(33, 37, 41, 0.8); /* couleur bg-dark Bootstrap avec 0.8 opacity */
+  /* 0.8 = 80% opaque, ajuste si tu veux plus ou moins */
+  transition: background-color 0.3s ease;
+}

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
-import './Section.css';
-
-export default function ProjectsSection({bg, textColor, height}) {
+export default function ProjectsSection({ bg, textColor, height }) {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
@@ -18,18 +16,20 @@ export default function ProjectsSection({bg, textColor, height}) {
   return (
     <section
       id="projets"
-      className={`container-fluid vh-100 ${bg} ${textColor} d-flex flex-column align-items-center justify-content-center`} style={{ scrollMarginTop: `${height}px`, backgroundImage: "url('/bg-projects.jpg')",  // chemin vers ton image
-    backgroundSize: "cover",                  // couvre toute la section
-    backgroundPosition: "center",             // centrée
-    backgroundRepeat: "no-repeat",            // pas de répétition
-    height: "100vh"                          // prend toute la hauteur de l’écran
-    }}
+      className={`${bg} ${textColor} py-5`}
+      style={{
+        scrollMarginTop: `${height}px`,
+        backgroundImage: "url('/bg-projects.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+        backgroundRepeat: "no-repeat",
+        overflowX: "hidden", // garde le scroll horizontal désactivé
+      }}
     >
-      <h2 className="mb-4">Mes Projets</h2>
+      <h2 className="text-center mb-5">Mes Projets</h2>
 
-      {/* Grille des vignettes */}
       <div className="container">
-        <div className="row g-4"> {/* g-4 = espace entre colonnes */}
+        <div className="row gx-4 gy-4 justify-content-center">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -37,7 +37,7 @@ export default function ProjectsSection({bg, textColor, height}) {
               onClick={() => setSelectedProject(project)}
               style={{ cursor: "pointer" }}
             >
-              <div className="card shadow-sm h-100">
+              <div className="card shadow-sm">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -51,26 +51,36 @@ export default function ProjectsSection({bg, textColor, height}) {
             </div>
           ))}
         </div>
+<Modal
+  show={!!selectedProject}
+  onHide={() => setSelectedProject(null)}
+  centered
+  size="lg"
+>
+  <Modal.Header closeButton>
+    <Modal.Title>{selectedProject?.title}</Modal.Title>
+  </Modal.Header>
+
+  <Modal.Body>
+    <img
+      src={selectedProject?.image}
+      alt={selectedProject?.title}
+      className="img-fluid rounded mb-3"
+    />
+    <p>{selectedProject?.description}</p>
+  </Modal.Body>
+
+  <Modal.Footer>
+    <Button variant="secondary" onClick={() => setSelectedProject(null)}>
+      Fermer
+    </Button>
+  </Modal.Footer>
+</Modal>
+
+
+
       </div>
-          
-          <Modal show={!!selectedProject} onHide={() => setSelectedProject(null)} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedProject?.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <img
-            src={selectedProject?.image}
-            alt={selectedProject?.title}
-            className="img-fluid rounded mb-3"
-          />
-          <p>{selectedProject?.description}</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setSelectedProject(null)}>
-            Fermer
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </section>
+         </section>
   );
 }
+
