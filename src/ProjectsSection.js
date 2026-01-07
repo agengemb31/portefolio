@@ -28,6 +28,12 @@ export default function ProjectsSection({ bg, textColor, height }) {
     >
       <h2 className="text-center mb-5">Mes Projets</h2>
 
+ <div className="d-flex align-items-center justify-content-center w-100 mb-5" style={{ gap: "1rem" }}>
+    <hr className="border-white border-3 w-25 opacity-50" />
+    <div className="rounded-circle bg-white" style={{ width: "10px", height: "10px" }}></div>
+    <hr className="border-white border-3 w-25 opacity-50" />
+  </div>
+
       <div className="container">
         <div className="row gx-4 gy-4 justify-content-center">
           {projects.map((project) => (

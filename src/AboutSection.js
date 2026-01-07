@@ -17,8 +17,20 @@ export default function AboutSection({bg, textColor, height})
 		J'aime comprendre comment les systèmes fonctionnent, optimiser les performances et transformer des idées en solutions concrètes. Je développe des projets pour apprendre, progresser et mettre mes compétences en pratique.<br/>
 		Ce portfolio regroupe mes réalisations, mes compétences et mon parcours.
 		</p>
-
-		<button type="button" className="btn btn-primary btn-lg mx-auto" style={{ width: "100px"}}><span class="glyphicon glyphicon-download"></span>CV</button>
+		<button
+  type="button"
+  className="btn btn-primary btn-lg mx-auto d-flex align-items-center gap-2"
+  style={{ width: "100px" }}
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = "/cv.pdf";
+    link.download = "CV_AlexisGengembre.pdf";
+    link.click();
+  }}
+>
+  <i className="bi bi-download"></i>
+  CV
+</button>
 		</div>
 
 

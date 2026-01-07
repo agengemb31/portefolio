@@ -31,7 +31,7 @@ export default function HomeSection({title, bg, textColor, height})
     					<div className="rounded-circle bg-primary" style={{ width: "10px", height: "10px", margin: "0 0.5rem" }}></div>
     					<hr className="border-primary border-3 w-25" />
 	    			</div>
-    				<h3>Développeur Logiciel - Développeur Web - DevOps</h3>
+    				<h3 className="text-center">Développeur Logiciel - Développeur Web - DevOps</h3>
   			</div>
 	    	</section>
 	

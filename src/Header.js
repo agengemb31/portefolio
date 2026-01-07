@@ -21,57 +21,57 @@ useEffect(() => {
 
   
 	return (
-    <div
-      ref={ref} // <-- attacher le ref ici
-      className={`${isTransparent ? "bg-dark-transparent" : "bg-dark"} container-fluid d-flex text-white justify-content-between align-items-center`}
-      style={{
-        minHeight: "10vh",
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        zIndex: 1000,
-        paddingLeft: "200px",
-        paddingRight: "200px",
-		   transition: "background-color 0.3s ease",
-      }}
-    > 
-      {/* Navbar collée en haut */}
-      <nav className="navbar navbar-dark navbar-expand-lg w-100">
-	  <a class="navbar-brand" href="#accueil">
-	  	<img src="/logo.png" alt="logo Agengemb" style={{ height: "8vh"}}/>
-	  </a>
-	<button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNavbar"
-          aria-controls="mainNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-	 
+		<div
+  ref={ref}
+  className={`${isTransparent ? "bg-dark-transparent" : "bg-dark"} container-fluid d-flex text-white justify-content-between align-items-center px-3 px-lg-5`}
+  style={{
+    minHeight: "10vh",
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    zIndex: 1000,
+    transition: "background-color 0.3s ease",
+  }}
+>
+		<nav className="navbar navbar-dark navbar-expand-lg w-100">
+  {/* Logo */}
+  <a className="navbar-brand mx-auto mx-lg-0" href="#accueil">
+    <img src="/logo.png" alt="logo Agengemb" style={{ height: "8vh" }} />
+  </a>
 
-	 <div id="mainNavbar" className="collapse navbar-collapse">
-          <ul className="ms-auto navbar-nav flex-column flex-lg-row">
-		<li className="nav-item">
-            		<a href="#accueil" className="nav-link text-white">Accueil</a>
-            	</li>
-		<li className="nav-item">
-	  	<a href="#apropos" className="nav-link text-white">À Propos</a>
-          	</li>  
-	  
-		<li className="nav-item">
-	  	<a href="#projets" className="nav-link text-white">Projets</a>
-          	</li>  
-		<li className="nav-item">
-	  <a href="#contact" className="nav-link text-white">Contact</a>
-        	</li>
-	  </ul>
-	  </div>
-      </nav>
+  {/* Toggler */}
+  <button
+    className="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#mainNavbar"
+    aria-controls="mainNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span className="navbar-toggler-icon"></span>
+  </button>
+
+  {/* Collapse */}
+  <div id="mainNavbar" className="collapse navbar-collapse">
+    <ul className="navbar-nav flex-column flex-lg-row gap-3 ms-lg-auto">
+      <li className="nav-item">
+        <a href="#accueil" className="nav-link text-white fs-3">Accueil</a>
+      </li>
+      <li className="nav-item">
+        <a href="#apropos" className="nav-link text-white fs-3">À Propos</a>
+      </li>
+      <li className="nav-item">
+        <a href="#projets" className="nav-link text-white fs-3">Projets</a>
+      </li>
+      <li className="nav-item">
+        <a href="#contact" className="nav-link text-white fs-3">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
     </div>
   );
 });
