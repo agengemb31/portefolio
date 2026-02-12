@@ -24,7 +24,7 @@ export default function ContactForm()
 	return (
  <div className="col-12 col-lg-7 mt-4 mt-lg-0">
                                                 <form onSubmit={sendEmail}>
-                                                        <div className="d-flex flex-column gap-5">
+                                                        <div className="d-flex flex-column gap-4 gap-md-5">
                                                                 <input name="name" className="form-control form-control-lg" placeholder="Nom" />
                                                                 <input name="email" className="form-control form-control-lg" placeholder="Email" />
                                                                 <input name="phone"className="form-control form-control-lg" placeholder="Téléphone" />
