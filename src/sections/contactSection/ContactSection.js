@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 export default function ContactSection({bg, textColor, height}) 
 {
 	return (
-		<BaseSection id="contact" bg={bg} textColor={textColor} padding="py-5" style={{ scrollMarginTop: `${height}px` }}>
+		<BaseSection id="contact" bg={bg} textColor={textColor} padding="py-5" style={{ scrollMarginTop: `${height}px`,  overflowY: "auto" }}>
 			<h1 className="text-center mb-4">Contactez-moi</h1>
 
 			<Divider/>	

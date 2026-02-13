@@ -6,7 +6,7 @@ import './AboutSection.css';
 export default function AboutSection({bg, textColor, height}) 
 {
 	return (
-		<BaseSection id="apropos" bg={bg} textColor={textColor} padding="py-5" style={{ scrollMarginTop: `${height}px` }}>
+		<BaseSection id="apropos" bg={bg} textColor={textColor} padding="py-5" style={{ scrollMarginTop: `${height}px`, minHeight: "calc(100dvh - " + height + "px)", overflowY: "auto" }}>
 			<h1 className="text-center mb-4">À Propos</h1>
 			
 			<Divider/>	
