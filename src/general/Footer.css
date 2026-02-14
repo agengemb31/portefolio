@@ -1,0 +1,4 @@
+footer {
+  position: relative; /* ou static par défaut */
+  bottom: auto;
+}

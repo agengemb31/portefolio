@@ -2,6 +2,10 @@ import emailjs from "@emailjs/browser";
 
 export default function ContactForm()
 {
+	const handleFocus = (e) => {
+  e.target.scrollIntoView({ behavior: "smooth", block: "center" });
+};
+
 	const sendEmail = (e) => {
                 e.preventDefault();
 
@@ -25,10 +29,10 @@ export default function ContactForm()
  <div className="col-12 col-lg-7 mt-4 mt-lg-0">
                                                 <form onSubmit={sendEmail}>
                                                         <div className="d-flex flex-column gap-4 gap-lg-5">
-                                                                <input name="name" className="form-control form-control-lg" placeholder="Nom" />
-                                                                <input name="email" className="form-control form-control-lg" placeholder="Email" />
-                                                                <input name="phone"className="form-control form-control-lg" placeholder="Téléphone" />
-                                                                <textarea name="message" className="form-control form-control-lg" placeholder="Votre message"style={{ minHeight: 200 }} />
+                                                                <input name="name" onFocus={handleFocus} className="form-control form-control-lg" placeholder="Nom" />
+                                                                <input name="email" onFocus={handleFocus} className="form-control form-control-lg" placeholder="Email" />
+                                                                <input name="phone" onFocus={handleFocus} className="form-control form-control-lg" placeholder="Téléphone" />
+                                                                <textarea name="message" onFocus={handleFocus} className="form-control form-control-lg" placeholder="Votre message"style={{ minHeight: 200 }} />
                                                                 <button type="submit" className="btn btn-primary btn-lg mx-auto">Envoyer</button>
                                                         </div>
                                                 </form>
