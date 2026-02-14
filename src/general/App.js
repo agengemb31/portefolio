@@ -1,4 +1,3 @@
-import logo from '../assets/logo.svg';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import HomeSection from '../sections/homeSection/HomeSection.js';
@@ -7,8 +6,6 @@ import React, { useState, useEffect, useRef } from "react";
 import ProjectsSection from '../sections/projectsSection/ProjectsSection.js';
 import ContactSection from '../sections/contactSection/ContactSection.js';
 import './App.css';
-
-
 
 function App() {
   const headerRef = useRef();

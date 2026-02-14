@@ -1,6 +1,6 @@
 import './Header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useRef, useEffect, useState, forwardRef } from "react";
+import React, { useEffect, useState, forwardRef } from "react";
 
 const Header = forwardRef((props, ref,) => {
 	const { height } = props;
