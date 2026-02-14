@@ -1,3 +1,4 @@
+
 import Header from './Header.js';
 import Footer from './Footer.js';
 import HomeSection from '../sections/homeSection/HomeSection.js';
@@ -25,13 +26,13 @@ function App() {
   }, []);
 
   return (
-  	<div className="d-flex flex-column min-vh-100"><Header ref={headerRef} height={headerHeight}/>
+  	<div className="d-flex flex-column min-vh-100">
+	  <Header ref={headerRef} height={headerHeight}/>
     <main className="flex-grow-1 ">
     <HomeSection bg="bg-light" textColor="text-white" height={headerHeight} />
     <AboutSection bg="bg-light" textColor="text-black" height={headerHeight} />
     <ProjectsSection bg="bg-light" textColor="text-white" height={headerHeight} />
     <ContactSection bg="bg-light" textColor="text-black" height={headerHeight} />
-	 <div className="d-block d-lg-none" style={{ height: 250, backgroundColor: "#f8f9fa" }} /> 
 	  </main>
     <Footer/>
 	  </div>
